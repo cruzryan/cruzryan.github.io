@@ -1,0 +1,47 @@
+.imagetext{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagetext h3{
+    margin-left: 1em;
+    width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .imagetext{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagetext h3{
+        margin-left: 0em;
+        width: 90%;
+        padding-left: 5%;
+
+    }
+
+    .imagetext img{
+        margin-bottom: 1em;
+    }
+    
+    .E{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding-left: 10%;
+        margin-left: 0vw;
+    }
+
+    .lex{
+        max-height: 300px; 
+    }
+
+    .E h1{
+        padding-bottom: 1em;
+    }
+}
+
+
