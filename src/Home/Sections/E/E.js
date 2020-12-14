@@ -1,6 +1,7 @@
 import './E.css';
 import fringe from '../../../Assets/fringe.jpg';
 import rules from '../../../Assets/12rule.jpg';
+import o21 from '../../../Assets/zero2one.jpg';
 import lex from '../../../Assets/lex.png';
 
 function E(){
@@ -26,6 +27,12 @@ function E(){
             <img src={rules} alt="12 rules for life book cover."/>
             <h3>12 Rules for Life was definetly a life-changing book for me. It taught me many lessons, some of which are: <br/> <br/> 1. There are many games one can play in life, from the plumber's game to the CEO game. And you are free to create new games or change the rules of existing ones. <br/> <br/> 2. One must have a good relationship with time, anything you do right now affects you future, and anything you do in your future affects the way people see your past.</h3>
         </div>
+        <div className="imagetext">
+            <img src={o21} alt="Zero to One book cover."/>
+            <h3>Zero to One is a LIFE changing book, I read it for the first time at the age of 15, and still learn new things every time I read it.<br/>
+            <br/>Like other books, this one has also taught me many lessons, some of which are: <br/><br/>1. Every moment in business only happens once. I stopped trying to create the "next facebook" and started thinking of ways to take things from 0 to 1. <br/><br/>2. Questioning things most people believe to be true, and find the actual truths behind them.</h3>
+        </div>
+
         <h2>Podcasts</h2>
         <br/>
         <div className="imagetext">
