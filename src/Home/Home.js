@@ -19,22 +19,22 @@ function Home(){
 
             {/* <NavBar/> */}
             <div className="links">
-            <Link to="/"><h1 className="myName">Ryan Cruz</h1></Link>
+            <Link to={process.env.PUBLIC_URL + '/'}><h1 className="myName">Ryan Cruz</h1></Link>
             <hr className="modifiedHR"/>
-                <Link to="/about"><h3 className="linkTo">About me</h3></Link>
-                <Link to="/contact"><h3 className="linkTo">Contact</h3></Link>
-                <Link to="/why"><h3 className="linkTo">Why isn't it easier?</h3></Link>
-                <Link to="/wild"><h3 className="linkTo">Wild ideas</h3></Link>
-                <Link to="/worldview"><h3 className="linkTo">Things that changed my worldview.</h3></Link>
+                <Link to={process.env.PUBLIC_URL + '/about'}><h3 className="linkTo">About me</h3></Link>
+                <Link to={process.env.PUBLIC_URL + '/contact'}><h3 className="linkTo">Contact</h3></Link>
+                <Link to={process.env.PUBLIC_URL + '/why'}><h3 className="linkTo">Why isn't it easier?</h3></Link>
+                <Link to={process.env.PUBLIC_URL + '/wild'}><h3 className="linkTo">Wild ideas</h3></Link>
+                <Link to={process.env.PUBLIC_URL + '/worldview'}><h3 className="linkTo">Things that changed my worldview.</h3></Link>
             </div>
             <div className="sectionTwo">
                 <Switch>
-                    <Route path="/about"><A/></Route>
-                    <Route path="/contact"><B/></Route>
-                    <Route path="/contacto"><B/></Route>
-                    <Route path="/why"><C/></Route>
-                    <Route path="/wild"><D/></Route>
-                    <Route path="/worldview"><E/></Route>
+                    <Route path={process.env.PUBLIC_URL + '/about'}><A/></Route>
+                    <Route path={process.env.PUBLIC_URL + '/contact'}><B/></Route>
+                    <Route path={process.env.PUBLIC_URL + '/contacto'}><B/></Route>
+                    <Route path={process.env.PUBLIC_URL + '/why'}><C/></Route>
+                    <Route path={process.env.PUBLIC_URL + '/wild'}><D/></Route>
+                    <Route path={process.env.PUBLIC_URL + '/worldview'}><E/></Route>
                 </Switch>
             </div>
         </div>
