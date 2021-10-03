@@ -1,11 +1,36 @@
+<script>
+  import { Link } from "svelte-navigator";
 
+</script>
 
 <main>
-    <h1 class="title">No blogs here yet</h1>
+
+    <Link to="/happy"><div class="blog">
+        <h1>Happiness</h1>
+        <h2>15/Sep/2021</h2>
+    </div>
+    </Link>
+
+    <Link to="/everything_repeats"><div class="blog">
+        <h1>Everything repeats</h1>
+        <h2>9/Sep/2021</h2>
+    </div>
+    </Link>
+
+    <Link to="/what_is_everyone_doing"><div class="blog">
+        <h1>What is everyone doing?</h1>
+        <h2>7/Sep/2021</h2>
+    </div>
+    </Link>
+
 </main>
 
 
 <style>
+
+    div{
+        margin-bottom: 3vh;
+    }
 
     main {
         width: 85vw;
@@ -14,22 +39,24 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        overflow: hidden;
+        user-select: none;
     }
 
     h1,h2{
         font-weight: 600;
     }
 
-    .title{
-        margin-top: -33vh;
-        color: #242424;
+    .blog{
+        cursor: pointer;
     }
 
-    .contact{
-        color: #4A4A4A;
-        text-decoration: underline;
-        cursor: pointer;
-        margin-top: 0.5em;
+    .blog h2{
+        color:  #828282;
+    }
+
+    .blog:hover{
+        transform: translate(7px);
     }
 
 </style>
